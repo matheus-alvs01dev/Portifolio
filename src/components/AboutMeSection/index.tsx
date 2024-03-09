@@ -1,4 +1,4 @@
-import { AboutMeContainer, PictureAndButtonsContainer } from "./style";
+import { AboutMeContainer, PictureAndButtonsContainer, ResumeContainer } from "./style";
 import { SocialIcons } from "../SocialIcons";
 import Button from "../Button";
 import profileDesactived from "./perfil-desativado.png";
@@ -26,10 +26,12 @@ export default function AboutMeSection() {
         />
         <SocialIcons />
         <Button onClick={handleClick} onHover={handleHover}>
-          {" "}
           ENTRE EM CONTATO!
         </Button>
       </PictureAndButtonsContainer>
+      <ResumeContainer>
+        <h2> Olá me Chamo<br/> <span>Matheus</span></h2>
+      </ResumeContainer>
     </AboutMeContainer>
   );
 }

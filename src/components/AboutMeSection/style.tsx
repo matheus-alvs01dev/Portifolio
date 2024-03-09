@@ -14,3 +14,7 @@ export const PictureAndButtonsContainer = styled.div`
     justify-content: center;
     align-items: center;
 `
+
+export const ResumeContainer = styled.div`
+
+`

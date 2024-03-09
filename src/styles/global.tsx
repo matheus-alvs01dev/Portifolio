@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles =createGlobalStyle`
 
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +18,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -34,6 +32,14 @@ body {
 ol, ul {
 	list-style: none;
 }
+
+h2{
+	font-family: "montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 2.5rem;
+	color:${props =>props.theme.colors.white};
+}
+
 blockquote, q {
 	quotes: none;
 }
