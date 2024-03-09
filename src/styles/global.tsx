@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-image: ${props=>props.theme.colors.GradientBg};
+	background-image: ${props=>props.theme.colors.gradientBg};
 }
 ol, ul {
 	list-style: none;
