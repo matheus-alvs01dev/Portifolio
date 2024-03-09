@@ -15,6 +15,7 @@ export const BannerContainer= styled(motion.section)<StyledBannerProps>`
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    max-width: 100vw;
     min-height: 100vh;
     max-height: 2560;
     width: 100%;

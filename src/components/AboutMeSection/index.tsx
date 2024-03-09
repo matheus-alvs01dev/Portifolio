@@ -25,12 +25,15 @@ export default function AboutMeSection() {
           alt="Foto de Perfil"
         />
         <SocialIcons />
-        <Button onClick={handleClick} onHover={handleHover}>
+        <Button width="50%"onClick={handleClick} onHover={handleHover}>
           ENTRE EM CONTATO!
         </Button>
       </PictureAndButtonsContainer>
       <ResumeContainer>
         <h2> Olá me Chamo<br/> <span>Matheus</span></h2>
+        <hr/>
+        <p>Sou apaixonado por desenvolvimento e atualmente estou cursando Sistemas de Informação na Univale. Nos últimos dois anos, fiz uma transição de carreira, dedicando-me ao estudo e desenvolvimento de projetos desafiadores. Sempre em busca de novos horizontes, adoro enfrentar desafios que me tiram da zona de conforto. </p>
+        <p>Fora do universo da tecnologia, sou um jovem apaixonado por música, especialmente por tocar violão, e jogar VideoGame;</p>
       </ResumeContainer>
     </AboutMeContainer>
   );

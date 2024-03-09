@@ -29,6 +29,13 @@ body {
 	line-height: 1;
 	background-image: ${props=>props.theme.colors.gradientBg};
 }
+
+section {
+	max-width: 1200px;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -36,8 +43,15 @@ ol, ul {
 h2{
 	font-family: "montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	color:${props =>props.theme.colors.white};
+}
+
+p{
+	font-family: "roboto", sans-serif;
+	color:${props =>props.theme.colors.white};
+	font-size: 1.2rem;
+	font-weight: 300;
 }
 
 blockquote, q {
