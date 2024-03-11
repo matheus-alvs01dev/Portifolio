@@ -3,6 +3,7 @@ import { CardsContainer, MyProjectsContainer } from "./style";
 import projects from "../../json/db.json";
 
 export default function MyProjects() {
+  
   return (
     <MyProjectsContainer>
       <h1>Meus Projetos</h1>

@@ -32,6 +32,8 @@ id,
   linkRepository,
   image,
 }: CardProps) {
+
+  
   const handleClick = () => {
     window.open(linkProject, "_blank");
   };

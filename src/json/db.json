@@ -1,29 +1,29 @@
 [
   {
+    "id": "345678",
+    "title do projeto": "Matheus Alves",
+    "description": "Esse site em que você se entra foi feito totalmente em React com styled Components e Typescript, feito com muito carinho e amor, é onde guardo meus projetos e toda minha trajetória",
+    "tags": ["react", "typeScript"],
+    "project link": "#",
+    "Repository link": "https://github.com/matheus-alvs01dev/Super-Jump-React",
+    "project image": "/src/assets/projectsBanners/matheusalvesbanner.jpg"
+  },
+  {
     "id": "123456",
-    "title do projeto": "teste1",
-    "description": "Esse projeto foi feito para testar minhas calopsitas, com javascriptusado para construir ninhos!",
-    "tags": ["react", "java", "ts"],
-    "project link": "https://www.facebook.com/",
-    "Repository link": "https://github.com/",
-    "project image": "/src/assets/projectsBanners/banner-projeto-teste.jpg"
+    "title do projeto": "EXARTEAM",
+    "description": "Um primeiros projetos em React feito em Js e depois refatorado para Ts consiste em criar cards para combatentes para o exercito brasileiro",
+    "tags": ["react", "javaScript", "typeScript"],
+    "project link": "https://exarteam-matheus-projects-1c179c84.vercel.app/",
+    "Repository link": "https://github.com/matheus-alvs01dev/EXARTEAM---Typescript/",
+    "project image": "/src/assets/projectsBanners/ExarteamFoto.png"
   },
   {
     "id": "789012",
-    "title do projeto": "calopsita2",
-    "description": "Esse projeto foi feito para testar minhas calopsitas, com javascriptusado para construir ninhos!",
-    "tags": ["react", "python"],
-    "project link": "http://linkdoprojeto2",
-    "Repository link": "http://linkrepositorio2",
-    "project image": "/src/assets/projectsBanners/calopsita-2.jpg"
-  },
-  {
-    "id": "345678",
-    "title do projeto": "projeto3",
-    "description": "Esse projeto foi feito para testar minhas calopsitas, com javascriptusado para construir ninhos!",
-    "tags": ["angular", "typescript"],
-    "project link": "http://linkdoprojeto3",
-    "Repository link": "http://linkrepositorio3",
-    "project image": "/src/assets/projectsBanners/banner-projeto-teste.jpg"
+    "title do projeto": "VollMed API",
+    "description": "BackEnd de uma clínica que possui agendamento e cancelamento de consultas, CRUD de Medicos e Pacientes. Feito em java com springboot, foi uma api-rest desenvolvida ao longo da formação SpringBoot da Alura",
+    "tags": ["java", "spring", "mysql"],
+    "project link": "https://github.com/matheus-alvs01dev/voll_med",
+    "Repository link": "https://github.com/matheus-alvs01dev/voll_med",
+    "project image": "/src/assets/projectsBanners/vollMed_Api.jpg"
   }
 ]

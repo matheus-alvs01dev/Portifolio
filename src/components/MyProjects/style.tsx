@@ -4,9 +4,13 @@ export const MyProjectsContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin: auto;
-  gap: 5rem;
+  gap:5rem;
+
+  h1 {
+    width: 100%;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -18,8 +22,15 @@ export const MyProjectsContainer = styled.section`
 
 export const CardsContainer = styled.section`
   display: flex;
-  flex-direction: column;
-  padding: 0rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding:  0 1rem 1rem 0;
   align-items: center;
-  gap: 5rem;
+  width: 100%;
+  max-width: 1200px;
+  column-gap: 0rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
 `;
