@@ -4,11 +4,25 @@ import { ButtonContainer } from "./style";
 interface ButtonProps {
   onClick: MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
-  onHover: MouseEventHandler<HTMLButtonElement>;
-  width: string;
+  onHover?: MouseEventHandler<HTMLButtonElement>;
+  onMouseLeave?: MouseEventHandler<HTMLButtonElement>;
+  width: string,
+  fontSize: string
+  padding: string
 }
 
-
-export default function Button({onClick, children, onHover, width}: ButtonProps) {
-  return <ButtonContainer onClick={onClick} onMouseEnter={onHover} width={width}>{children}</ButtonContainer>;
+export default function Button({
+  onClick,
+  children,
+  onHover,
+  width,
+  onMouseLeave,
+  fontSize,
+  padding,
+}: ButtonProps) {
+  return (
+    <ButtonContainer onClick={onClick} onMouseEnter={onHover} width={width} onMouseLeave={onMouseLeave} fontSize={fontSize} padding={padding}>
+      {children}
+    </ButtonContainer>
+  );
 }

@@ -45,6 +45,11 @@ h2{
 	font-weight: 500;
 	font-size: 3rem;
 	color:${props =>props.theme.colors.white};
+
+	@media (max-width: 375px) {
+		font-size: 2rem;	
+	}
+	
 }
 
 p{
@@ -52,6 +57,11 @@ p{
 	color:${props =>props.theme.colors.white};
 	font-size: 1.2rem;
 	font-weight: 300;
+
+	@media (max-width: 375px) {
+		font-size: 1rem;
+		
+	}
 }
 
 blockquote, q {
@@ -67,5 +77,6 @@ table {
 	border-spacing: 0;
 }
 `
+
 
 export default GlobalStyles;

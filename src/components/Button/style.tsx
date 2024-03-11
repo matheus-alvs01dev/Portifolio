@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 interface ButtonProps{
   width: string,
+  fontSize: string,
+  padding: string
 }
 
 export const ButtonContainer = styled.button<ButtonProps>`
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: ${(props) => props.padding};
   justify-content: center;
   width: ${props => props.width};
   align-items: center;
@@ -16,7 +18,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
   border-color: ${(props) => props.theme.colors.white};
   border-radius: ${(props) => props.theme.sizes.borderRadius};
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: ${(props)=> props.fontSize};
   font-weight: 700;
   text-transform: uppercase;
   font-family: "roboto", sans-serif;
