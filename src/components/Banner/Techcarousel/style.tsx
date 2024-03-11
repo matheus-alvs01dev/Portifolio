@@ -18,7 +18,7 @@ export const TechItem = styled.li`
     transform: scale(1.2);
   }
 
-  @media (min-width: 375px) {
+  @media (max-width: 375px) {
 
     svg{
       font-size: 2rem;

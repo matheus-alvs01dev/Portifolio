@@ -14,7 +14,7 @@ export const SocialIconsContainer = styled.ul`
   }
   
   :hover{
-    filter:drop-shadow(0 0 10px ${props => props.theme.colors.purple});
+    filter: drop-shadow(${(props) => props.theme.sizes.boxShadow});
     
   } 
 

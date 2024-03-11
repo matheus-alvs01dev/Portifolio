@@ -11,10 +11,5 @@ export default function ImageServices() {
   const handleMouseLeave = () => {
     setImageChanged(false);
   };
-
-  const handleClick = () => {
-    window.open("https://wa.link/ro0439", "_blank");
-  };
-
-  return {handleHover, handleMouseLeave, handleClick, imageChanged}
+  return {handleHover, handleMouseLeave, imageChanged}
 }

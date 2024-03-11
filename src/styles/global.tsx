@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles =createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-image: ${props=>props.theme.colors.gradientBg};
+	background-image: ${(props) => props.theme.colors.gradientBg};
 }
 
 section {
@@ -40,11 +40,27 @@ ol, ul {
 	list-style: none;
 }
 
+h1{
+	color: ${(props) => props.theme.colors.white};
+	font-family: "montserrat", sans-serif;
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	text-align: center;
+
+	@media (max-width:480px){
+		font-size: 3rem;
+		
+	}
+}
+
 h2{
 	font-family: "montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 3rem;
-	color:${props =>props.theme.colors.white};
+	color:${(props) => props.theme.colors.white};
 
 	@media (max-width: 375px) {
 		font-size: 2rem;	
@@ -54,9 +70,10 @@ h2{
 
 p{
 	font-family: "roboto", sans-serif;
-	color:${props =>props.theme.colors.white};
+	color:${(props) => props.theme.colors.white};
 	font-size: 1.2rem;
 	font-weight: 300;
+	line-height: 1.2rem;
 
 	@media (max-width: 375px) {
 		font-size: 1rem;
@@ -76,7 +93,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-`
-
+`;
 
 export default GlobalStyles;

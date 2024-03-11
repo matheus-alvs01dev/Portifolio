@@ -1,0 +1,29 @@
+[
+  {
+    "id": "123456",
+    "title do projeto": "teste1",
+    "description": "Esse projeto foi feito para testar minhas calopsitas, com javascriptusado para construir ninhos!",
+    "tags": ["react", "java", "ts"],
+    "project link": "https://www.facebook.com/",
+    "Repository link": "https://github.com/",
+    "project image": "/src/assets/projectsBanners/banner-projeto-teste.jpg"
+  },
+  {
+    "id": "789012",
+    "title do projeto": "calopsita2",
+    "description": "Esse projeto foi feito para testar minhas calopsitas, com javascriptusado para construir ninhos!",
+    "tags": ["react", "python"],
+    "project link": "http://linkdoprojeto2",
+    "Repository link": "http://linkrepositorio2",
+    "project image": "/src/assets/projectsBanners/calopsita-2.jpg"
+  },
+  {
+    "id": "345678",
+    "title do projeto": "projeto3",
+    "description": "Esse projeto foi feito para testar minhas calopsitas, com javascriptusado para construir ninhos!",
+    "tags": ["angular", "typescript"],
+    "project link": "http://linkdoprojeto3",
+    "Repository link": "http://linkrepositorio3",
+    "project image": "/src/assets/projectsBanners/banner-projeto-teste.jpg"
+  }
+]

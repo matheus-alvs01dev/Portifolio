@@ -12,7 +12,11 @@ import profileActivated from "./foto de perfil.png";
 import useImageServices from "../../services/useImageServices";
 
 export default function AboutMe() {
-  const { handleHover, handleMouseLeave, handleClick, imageChanged } = useImageServices();
+  const { handleHover, handleMouseLeave, imageChanged } = useImageServices();
+
+  const handleClick = () => {
+    window.open("https://wa.link/ro0439", "_blank");
+  };
 
   return (
     <AboutMeContainer>
@@ -37,7 +41,7 @@ export default function AboutMe() {
       <ResumeContainer>
         <h2>
           {" "}
-          Olá me Chamo
+          Olá, me Chamo
           <br /> <span>Matheus</span>
         </h2>
         <hr />
@@ -55,7 +59,12 @@ export default function AboutMe() {
       </ResumeContainer>
       <ButtonsMobileContainer>
         <SocialIcons />
-        <Button fontSize="1rem" width="100%" onClick={handleClick} padding="0.5rem 1rem">
+        <Button
+          fontSize="1rem"
+          width="100%"
+          onClick={handleClick}
+          padding="0.5rem 1rem"
+        >
           ENTRE EM CONTATO!
         </Button>
       </ButtonsMobileContainer>

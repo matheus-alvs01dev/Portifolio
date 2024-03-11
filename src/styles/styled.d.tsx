@@ -7,6 +7,8 @@ declare module 'styled-components'{
         sizes:{
             borderRadius: string,
             borderSolid: string,
+            boxShadow: string,
+            
         }
 
         colors: {

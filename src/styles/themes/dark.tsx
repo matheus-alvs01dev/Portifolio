@@ -2,8 +2,9 @@ export default {
     title: "dark",
 
     sizes: {
-      borderRadius: "20px",
+      borderRadius: "10px",
       borderSolid: "0.2rem solid",  
+      boxShadow: "0 5px 15px rgba(67, 48, 181, 0.4)"
     },
 
     colors: {

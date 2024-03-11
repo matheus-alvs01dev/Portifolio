@@ -5,6 +5,7 @@ export const AboutMeContainer = styled.section`
   height: 50vh;
   justify-content: center;
   align-items: center;
+  padding:  10rem 2rem;
   margin: auto;
 
   @media (max-width: 768px){
@@ -23,7 +24,7 @@ export const PictureAndButtonsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 50%;
 
   svg {
     font-size: 3rem;
@@ -34,7 +35,7 @@ export const PictureAndButtonsContainer = styled.div`
   }
 
   img{
-    width: 40%;
+    width: 50%;
   }
 `;
 
@@ -59,6 +60,10 @@ export const ResumeContainer = styled.div`
   justify-content: center;
   width: 40%;
   gap: 1rem;
+
+  span{
+    font-weight: 800;
+  }
 
   hr {
     height: 5px;
