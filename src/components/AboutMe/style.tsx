@@ -36,6 +36,7 @@ export const PictureAndButtonsContainer = styled.div`
 
   img{
     width: 50%;
+    height: 50%;
   }
 `;
 

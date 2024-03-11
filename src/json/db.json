@@ -6,7 +6,7 @@
     "tags": ["react", "typeScript"],
     "project link": "#",
     "Repository link": "https://github.com/matheus-alvs01dev/Super-Jump-React",
-    "project image": "/src/assets/projectsBanners/matheusalvesbanner.jpg"
+    "project image": "https://dev.matheusalvesbarroso.com.br/banners/matheusalvesbanner.jpg"
   },
   {
     "id": "123456",
@@ -15,7 +15,7 @@
     "tags": ["react", "javaScript", "typeScript"],
     "project link": "https://exarteam-matheus-projects-1c179c84.vercel.app/",
     "Repository link": "https://github.com/matheus-alvs01dev/EXARTEAM---Typescript/",
-    "project image": "/src/assets/projectsBanners/ExarteamFoto.png"
+    "project image": "https://dev.matheusalvesbarroso.com.br/banners/ExarteamFoto.png"
   },
   {
     "id": "789012",
@@ -24,6 +24,6 @@
     "tags": ["java", "spring", "mysql"],
     "project link": "https://github.com/matheus-alvs01dev/voll_med",
     "Repository link": "https://github.com/matheus-alvs01dev/voll_med",
-    "project image": "/src/assets/projectsBanners/vollMed_Api.jpg"
+    "project image": "https://dev.matheusalvesbarroso.com.br/banners/vollMed_Api.jpg"
   }
 ]
