@@ -9,24 +9,10 @@ import { SocialIcons } from "../SocialIcons";
 import Button from "../Button";
 import profileDesactived from "./perfil-desativado.png";
 import profileActivated from "./foto de perfil.png";
-import { useState } from "react";
+import useImageServices from "../../services/useImageServices";
 
 export default function AboutMeSection() {
-  const [imageChanged, setImageChanged] = useState(false);
-
-  const handleHover = () => {
-    if (!imageChanged) {
-      setImageChanged(true);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    setImageChanged(false);
-  };
-
-  const handleClick = () => {
-    window.open("https://wa.link/ro0439", "_blank");
-  };
+  const { handleHover, handleMouseLeave, handleClick, imageChanged } = useImageServices();
 
   return (
     <AboutMeContainer>

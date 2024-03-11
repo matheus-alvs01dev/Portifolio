@@ -1,75 +1,50 @@
+import planetRDesktop from "./planet-r.png";
 import planetRTablet from "./planet-r-tablet.png";
 import planetLDesktop from "./planet-l.png";
 import planetLTablet from "./planet-l-tablet.png";
 import { PlanetR, PlanetL } from "./style";
-import TranslateXAnimation from "../../../animations/TranslateXAnimation";
-import ScrollPositionAnimation from "../../../animations/ScrollPositionAnimetion";
-import ScrollScaleAnimation from "../../../animations/ScrollScaleAnimation";
+import usePlanetLServices from "../../../../services/usePlanetLServices";
+import usePlanetRServices from "../../../../services/usePlanetRServices";
 
 export default function Planets() {
-  ///Position
-  const postitionPlanetR = ScrollPositionAnimation({
-    scrollRangeX: [0, 800],
-    scrollRangeY: [0, 800],
-    movementRangeX: [0, 400],
-    movementRangeY: [0, 100],
-  });
-  const postitionPlanetL = ScrollPositionAnimation({
-    scrollRangeX: [0, 800],
-    scrollRangeY: [0, 800],
-    movementRangeX: [0, -180],
-    movementRangeY: [0, -300],
-  });
-  ///Scale
-  const PlanetRScale = ScrollScaleAnimation({
-    scrollRange: [0, 800],
-    scaleRange: [0.8, 1],
-  });
-  const PlanetLScale = ScrollScaleAnimation({
-    scrollRange: [0, 800],
-    scaleRange: [0.5, 1],
-  });
+  const {
+    positionXR,
+    positionYR,
+    planetRScale,
+    planetRAnimationX,
+    planetRAnimationY,
+  } = usePlanetRServices();
 
-  ///Translation
-  const PlanetRanimationX = TranslateXAnimation({
-    timeMultiplier: 0.4,
-    displacementMultiplier: 18,
-  });
-  const PlanetLanimationX = TranslateXAnimation({
-    timeMultiplier: 0.4,
-    displacementMultiplier: 14,
-  });
-  const PlanetRanimationY = TranslateXAnimation({
-    timeMultiplier: 0.4,
-    displacementMultiplier: 12,
-  });
-  const PlanetLanimationY = TranslateXAnimation({
-    timeMultiplier: 0.4,
-    displacementMultiplier: 15,
-  });
+  const {
+    positionXL,
+    positionYL,
+    planetLScale,
+    planetLAnimationX,
+    PlanetLAnimationY,
+  } = usePlanetLServices();
 
   return (
     <>
       <PlanetR
-        $desktopimage={planetLDesktop}
+        $desktopimage={planetRDesktop}
         $tabletimage={planetRTablet}
         style={{
-          x: postitionPlanetR[0],
-          y: postitionPlanetR[1],
-          scale: PlanetRScale,
-          translateX: PlanetRanimationX,
-          translateY: PlanetRanimationY,
+          x: positionXR,
+          y: positionYR,
+          scale: planetRScale,
+          translateX: planetRAnimationX,
+          translateY: planetRAnimationY,
         }}
       />
       <PlanetL
         $desktopimage={planetLDesktop}
         $tabletimage={planetLTablet}
         style={{
-          x: postitionPlanetL[0],
-          y: postitionPlanetL[1],
-          scale: PlanetLScale,
-          translateX: PlanetLanimationX,
-          translateY: PlanetLanimationY,
+          x: positionXL,
+          y: positionYL,
+          scale: planetLScale,
+          translateX: planetLAnimationX,
+          translateY: PlanetLAnimationY,
         }}
       />
     </>

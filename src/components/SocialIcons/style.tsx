@@ -3,11 +3,7 @@ import styled from "styled-components";
 export const SocialIconsContainer = styled.ul`
   display: flex;
   justify-content: center;
-  align-items: center;
-
-
-
-  
+  align-items: center; 
 
   svg { 
     color: ${props => props.theme.colors.white};
@@ -16,12 +12,10 @@ export const SocialIconsContainer = styled.ul`
     filter: none;
     transition: 0.1s ease-in-out;
   }
+  
   :hover{
-    filter:drop-shadow(0 0 10px ${props => props.theme.colors.lightPurple});
+    filter:drop-shadow(0 0 10px ${props => props.theme.colors.purple});
     
   } 
-
-
-
 
 `;
