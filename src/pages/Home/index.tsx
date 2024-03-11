@@ -1,11 +1,11 @@
-import AboutMeSection from "../../components/AboutMeSection";
+import AboutMe from "../../components/AboutMe";
 import Banner from "../../components/Banner";
 
 function Home() {
   return (
     <div>
       <Banner />
-      <AboutMeSection />
+      <AboutMe />
     </div>
   );
 }

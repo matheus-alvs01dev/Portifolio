@@ -11,7 +11,7 @@ import profileDesactived from "./perfil-desativado.png";
 import profileActivated from "./foto de perfil.png";
 import useImageServices from "../../services/useImageServices";
 
-export default function AboutMeSection() {
+export default function AboutMe() {
   const { handleHover, handleMouseLeave, handleClick, imageChanged } = useImageServices();
 
   return (
