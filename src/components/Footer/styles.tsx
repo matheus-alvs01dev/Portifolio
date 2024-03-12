@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   background-color: ${(props) => props.theme.colors.footerBackground};
 `;

@@ -39,6 +39,21 @@ export const PictureAndButtonsContainer = styled.div`
   }
 `;
 
+export const MobileImage = styled.img`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+
+    img {
+      object-fit: cover;
+      width: 260px;
+      height: 275px;
+      max-width: 260oc;
+    }
+  }
+`
+
 export const ResumeContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -81,6 +96,7 @@ export const ResumeContainer = styled.div`
 
 export const ButtonsMobileContainer = styled.div`
   display: none;
+  
 
   @media (max-width: 768px) {
     display: flex;
@@ -88,12 +104,5 @@ export const ButtonsMobileContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-
-    img {
-      object-fit: cover;
-      width: 260px;
-      height: 275px;
-      max-width: 260oc;
-    }
   }
 `;

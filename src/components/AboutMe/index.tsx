@@ -1,7 +1,7 @@
 import {
   AboutMeContainer,
   ButtonsMobileContainer,
-  ImgMobile,
+  MobileImage,
   PictureAndButtonsContainer,
   ResumeContainer,
 } from "./style";
@@ -37,7 +37,7 @@ export default function AboutMe() {
           ENTRE EM CONTATO!
         </Button>
       </PictureAndButtonsContainer>
-      <img src={profileActivated} />
+      <MobileImage src={profileActivated} />
       <ResumeContainer>
         <h2>
           {" "}
