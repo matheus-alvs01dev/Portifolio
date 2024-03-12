@@ -39,19 +39,6 @@ export const PictureAndButtonsContainer = styled.div`
   }
 `;
 
-export const ImgMobile = styled.img`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: flex;
-    width: 50%;
-  }
-
-  @media (max-width: 375px) {
-    width: 80%;
-  }
-`;
-
 export const ResumeContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -106,6 +93,7 @@ export const ButtonsMobileContainer = styled.div`
       object-fit: cover;
       width: 260px;
       height: 275px;
+      max-width: 260oc;
     }
   }
 `;

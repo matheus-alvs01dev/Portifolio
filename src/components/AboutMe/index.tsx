@@ -37,7 +37,7 @@ export default function AboutMe() {
           ENTRE EM CONTATO!
         </Button>
       </PictureAndButtonsContainer>
-      <ImgMobile src={profileActivated} />
+      <img src={profileActivated} />
       <ResumeContainer>
         <h2>
           {" "}
