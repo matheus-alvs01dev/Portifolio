@@ -13,7 +13,8 @@ export default {
         gradientBg: "linear-gradient(#0B0B0B, #181818);",
         gray: "#696969",
         white: "#F2EEEE",
-        purpleGradient:"linear-gradient(0.8turn,#7326AF,#4330B5)"
+        purpleGradient:"linear-gradient(0.8turn,#7326AF,#4330B5)",
+        footerBackground: "#040404",
     }
 
 }

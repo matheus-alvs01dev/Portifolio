@@ -17,7 +17,8 @@ declare module 'styled-components'{
             gradientBg: string,
             gray: string,
             white: string,
-            purpleGradient:string;
+            purpleGradient:string,
+            footerBackground: string,
         }
     }
 }

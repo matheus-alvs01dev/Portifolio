@@ -5,17 +5,15 @@ export const AboutMeContainer = styled.section`
   height: 50vh;
   justify-content: center;
   align-items: center;
-  padding:  10rem 2rem;
+  padding: 10rem 2rem 0rem 2rem;
   margin: auto;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     flex-direction: column;
-    padding: 10rem 2rem;
+    padding: 5rem 2rem 0rem 2rem;
     gap: 2rem;
-    margin: auto; 
+    margin: auto;
     height: fit-content;
-    
-   
   }
 `;
 
@@ -30,13 +28,14 @@ export const PictureAndButtonsContainer = styled.div`
     font-size: 3rem;
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: none;
   }
 
-  img{
-    width: 50%;
-    height: 50%;
+  img {
+    object-fit: cover;
+    width: 260px;
+    height: 275px;
   }
 `;
 
@@ -51,9 +50,7 @@ export const ImgMobile = styled.img`
   @media (max-width: 375px) {
     width: 80%;
   }
-
-   
-`
+`;
 
 export const ResumeContainer = styled.div`
   display: flex;
@@ -62,7 +59,7 @@ export const ResumeContainer = styled.div`
   width: 40%;
   gap: 1rem;
 
-  span{
+  span {
     font-weight: 800;
   }
 
@@ -80,31 +77,35 @@ export const ResumeContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px){
-      width: 100%;
-      padding: auto;
-      text-align: center;
-      align-items: center;
-      padding: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: auto;
+    text-align: center;
+    align-items: center;
+    padding: 0;
 
-      hr{
-        border-radius: 10px;
-        margin-right: 0;
-        width: 60%;
-      }
-      
-   
+    hr {
+      border-radius: 10px;
+      margin-right: 0;
+      width: 60%;
+    }
   }
 `;
 
 export const ButtonsMobileContainer = styled.div`
   display: none;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 1rem 0;
+
+    img {
+      object-fit: cover;
+      width: 260px;
+      height: 275px;
+    }
   }
-`
+`;

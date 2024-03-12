@@ -90,6 +90,7 @@ export const TitleAndParagraphContainer = styled.div`
     text-transform: uppercase;
     font-weight: 800;
     font-size: 1.8rem;
+    margin: 0;
   }
 
   p {
@@ -97,6 +98,13 @@ export const TitleAndParagraphContainer = styled.div`
     color: ${(props) => props.theme.colors.gray};
     font-weight: 400;
     width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    h3,
+    p {
+      text-align: center;
+    }
   }
 `;
 
@@ -133,5 +141,3 @@ export const ProjectLinksContainer = styled.div`
     padding: 0.2rem;
   }
 `;
-
-

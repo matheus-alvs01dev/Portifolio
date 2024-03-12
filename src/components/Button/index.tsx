@@ -6,22 +6,29 @@ interface ButtonProps {
   children: React.ReactNode;
   onHover?: MouseEventHandler<HTMLButtonElement>;
   onMouseLeave?: MouseEventHandler<HTMLButtonElement>;
-  width: string,
-  fontSize: string
-  padding: string
+  width?: string;
+  fontSize?: string;
+  padding?: string;
 }
 
 export default function Button({
   onClick,
   children,
   onHover,
-  width,
   onMouseLeave,
-  fontSize,
-  padding,
+  width = "100%", 
+  fontSize = "1rem",
+  padding = "0.5rem 1rem", 
 }: ButtonProps) {
   return (
-    <ButtonContainer onClick={onClick} onMouseEnter={onHover} width={width} onMouseLeave={onMouseLeave} fontSize={fontSize} padding={padding}>
+    <ButtonContainer
+      onClick={onClick}
+      onMouseEnter={onHover}
+      width={width}
+      onMouseLeave={onMouseLeave}
+      fontSize={fontSize}
+      padding={padding}
+    >
       {children}
     </ButtonContainer>
   );

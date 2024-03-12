@@ -1,5 +1,6 @@
 import AboutMe from "../../components/AboutMe";
 import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 import MyProjects from "../../components/MyProjects";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
       <Banner />
       <AboutMe />
       <MyProjects />
+      <Footer />
     </div>
   );
 }

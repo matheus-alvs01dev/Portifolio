@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
-export const SocialIconsContainer = styled.ul`
+
+interface SocialIconsContainerProps{
+  width?: string,
+}
+
+export const SocialIconsContainer = styled.ul<SocialIconsContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center; 
+  width: ${(props) => props.width || "100%"};
 
   svg { 
     color: ${props => props.theme.colors.white};
@@ -11,6 +17,7 @@ export const SocialIconsContainer = styled.ul`
     font-size: 2rem;
     filter: none;
     transition: 0.1s ease-in-out;
+    cursor: pointer;
   }
   
   :hover{
@@ -19,3 +26,5 @@ export const SocialIconsContainer = styled.ul`
   } 
 
 `;
+
+

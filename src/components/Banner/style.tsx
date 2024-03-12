@@ -17,14 +17,13 @@ export const BannerContainer= styled(motion.section)<StyledBannerProps>`
     gap: 2rem;
     max-width: 100vw;
     min-height: 100vh;
-    max-height: 2560;
+    max-height: 2560px;
     width: 100%;
     background-image: ${(props) => `url(${props.$bgBanner})`};
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     margin:0;
-    padding: 0%;
+    padding: 0;
 `
 export const SocialAndLogoContainer = styled(motion.div)`
     display: flex;

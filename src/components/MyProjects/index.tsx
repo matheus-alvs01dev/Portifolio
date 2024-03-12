@@ -1,11 +1,15 @@
 import Card from "../Card";
-import { CardsContainer, MyProjectsContainer } from "./style";
+import { CardsContainer, MyProjectsContainer,ArrowContainer } from "./style";
 import projects from "../../json/db.json";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function MyProjects() {
-  
   return (
     <MyProjectsContainer>
+      <ArrowContainer>
+        <IoIosArrowDown />
+      </ArrowContainer>
+
       <h1>Meus Projetos</h1>
       <CardsContainer>
         {projects.map((project) => (
