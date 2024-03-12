@@ -5,7 +5,7 @@
     "description": "Esse site em que você se entra foi feito totalmente em React com styled Components e Typescript, feito com muito carinho e amor, é onde guardo meus projetos e toda minha trajetória",
     "tags": ["react", "typeScript"],
     "project link": "#",
-    "Repository link": "https://github.com/matheus-alvs01dev/Super-Jump-React",
+    "Repository link": "https://github.com/matheus-alvs01dev/Portifolio",
     "project image": "https://dev.matheusalvesbarroso.com.br/banners/matheusalvesbanner.jpg"
   },
   {
@@ -20,7 +20,7 @@
   {
     "id": "789012",
     "title do projeto": "VollMed API",
-    "description": "BackEnd de uma clínica que possui agendamento e cancelamento de consultas, CRUD de Medicos e Pacientes. Feito em java com springboot, foi uma api-rest desenvolvida ao longo da formação SpringBoot da Alura",
+    "description": "BackEnd de uma clínica que possui agendamento e cancelamento de consultas, CRUD de médicos e macientes. Feito em Java com Springboot, foi uma api-rest desenvolvida ao longo da formação SpringBoot da Alura",
     "tags": ["java", "spring", "mysql"],
     "project link": "https://github.com/matheus-alvs01dev/voll_med",
     "Repository link": "https://github.com/matheus-alvs01dev/voll_med",

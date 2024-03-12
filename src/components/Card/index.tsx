@@ -62,7 +62,7 @@ id,
           >
             Ver Projeto
           </Button>
-          <a href={linkRepository}>
+          <a href={linkRepository} target="blank">
             <FaGithub />
           </a>
         </ProjectLinksContainer>
