@@ -10,8 +10,8 @@ export const CardContainer = styled.section`
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  width: 540px;
-  max-width: 540px;
+  width: 60vw;
+  max-width: 900px;
   height: fit-content;
   min-height: 250px;
   border: ${(props) => props.theme.sizes.borderSolid};
@@ -19,7 +19,7 @@ export const CardContainer = styled.section`
   border-radius: ${(props) => props.theme.sizes.borderRadius};
   box-shadow: 0 5px 15px rgba(67, 48, 181, 0.4);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1199px) {
     grid-template-columns: 1fr;
     width: 450px;
     padding: 1rem;
@@ -28,7 +28,7 @@ export const CardContainer = styled.section`
     width: 250px;
     grid-template-columns: 1fr;
     height: auto;
-    padding: 1rem;
+    padding: 2rem;
   }
 `;
 
@@ -41,13 +41,17 @@ export const BannerAndTagsContainer = styled.div`
 
 export const ProjectsBanner = styled.img`
   object-fit: cover;
-  width: 100%;
-  height: 135px;
+  width: 25em;
+  height: 15em;
   border-radius: ${(props) => props.theme.sizes.borderRadius};
 
-  @media (max-width: 768px) {
-    width: 250px;
-    height: 125px;
+  @media (max-width: 1199px) {
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (max-width: 480px) {
+    
   }
 `;
 
@@ -58,6 +62,11 @@ export const ProjectsTagsContainer = styled.ul`
   max-width: 260px;
   padding: 0.6rem;
   gap: 0.6rem;
+
+  @media (max-width: 1199px) {
+    max-width: 100%;
+  }
+
 `;
 
 export const Tag = styled.li`
@@ -131,7 +140,7 @@ export const ProjectLinksContainer = styled.div`
     transform: scale(1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1199px) {
     button {
       width: 80%;
       padding: 0.5rem;

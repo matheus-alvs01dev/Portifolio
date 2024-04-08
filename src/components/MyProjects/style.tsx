@@ -57,9 +57,7 @@ export const ArrowContainer = styled.div`
 `;
 
 export const CardsContainer = styled.section`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
   margin: auto;
   align-items: center;
